@@ -1,0 +1,76 @@
+html{
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: rgba(255,102,102,0.8);
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    display: grid;
+    justify-items: center;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+                        "null freetrial"
+                        "intro signup";
+    width: 1200px;
+    margin: 120px auto;
+}
+
+#container > div{
+}
+
+#freetrial {
+    width: 500px;
+    height: 80px;
+    grid-area: freetrial;
+    background: purple;
+    border-radius: 15px;
+    box-shadow: rgba(14,14,14, 0.2) 1px 10px;
+}
+
+#intro{
+    grid-area: intro;
+    color: white;
+    width: 500px;
+    height: 500px;
+}
+
+#intro > *{
+    vertical-align: middle;
+}
+
+#signup{
+    grid-area: signup;
+    text-align: center;
+    padding-top: 20px;
+    background: white;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-shadow: rgba(14,14,14, 0.2) 1px 10px;
+}
+
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 20px auto;
+    width: 85%;
+}
+
+#signupForm > *{
+    height: 45px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#signupForm > input{
+    padding: 0 10px;
+}
+
+#signupForm > button{
+    background: lightgreen;
+    border: lightgray;
+    border-radius: 5px;
+}
